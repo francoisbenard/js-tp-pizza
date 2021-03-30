@@ -1,0 +1,16 @@
+header {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    box-shadow: 0 3px 2px var(--darken-secondary-color);
+    padding-top: 3px;
+}
+    header .logo img {
+        width: 70px;
+    }
+    header .socials {
+        position: absolute;
+        right: 20px;
+    }

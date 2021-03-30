@@ -1,0 +1,42 @@
+footer {
+    background: var(--primary-color);
+    box-shadow: 0 -3px 2px var(--darken-secondary-color);
+    padding: 30px;
+    font-size: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "menu about info"
+                         ". admin .";
+}
+    footer p {
+        cursor: pointer;
+    }
+    footer .menu {
+        grid-area: menu;
+    }
+    footer .about {
+        grid-area: about;
+    }
+    footer .info {
+        grid-area: info;
+    }
+    footer .admin {
+        grid-area: admin;
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+    }
+    footer .admin::before {
+        content: "🔐 ";
+        position: absolute;
+        top: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer .admin a {
+        cursor: pointer;
+        color: var(--darken-secondary-color);
+    }
+    footer .admin a:hover {
+        color: var(--secondary-color);
+    }

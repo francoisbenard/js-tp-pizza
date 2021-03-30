@@ -1,0 +1,20 @@
+:root {
+    --primary-color: hsl(29, 100%, 50%);
+    --darken-primary-color: hsl(29, 100%, 30%);
+    --lighten-primary-color: hsl(29, 100%, 70%);
+    --secondary-color: hsl(199, 100%, 50%);
+    --darken-secondary-color: hsl(199, 100%, 30%);
+    --lighten-secondary-color: hsl(199, 100%, 70%);
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: white;
+    font-family: sans-serif;
+    min-width: 580px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    height: 100vh; 
+}
